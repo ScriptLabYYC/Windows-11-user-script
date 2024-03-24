@@ -17,4 +17,7 @@ winget install --id=Microsoft.VCRedist.2015+.x64  -e
 winget install -e --id Oracle.VirtualBox
 winget install -e startallback
 winget install coretemp
+
+wmic memorychip get speed,ConfiguredVoltage,DeviceLocator,Manufacturer,MaxVoltage,Minvoltage,Partnumber
+
 ```
