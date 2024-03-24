@@ -12,4 +12,5 @@ winget install --id Microsoft.Powershell --source winget
 winget install --id Brave.Brave
 set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge' -Name 'NoRemove' -value 0
 Get-AppxPackage⁣ Microsoft. OneDrive | Remove-AppxPackage
+start https://github.com/LeDragoX/Win-Debloat-Tools
 ```
