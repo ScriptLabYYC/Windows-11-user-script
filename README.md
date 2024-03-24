@@ -13,6 +13,6 @@ winget install --id Brave.Brave
 set-ItemProperty -Path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge' -Name 'NoRemove' -value 0
 Get-AppxPackage⁣ Microsoft. OneDrive | Remove-AppxPackage
 start https://github.com/LeDragoX/Win-Debloat-Tools
-winget install virtualbox
-
+winget install --id=Microsoft.VCRedist.2015+.x64  -e
+winget install -e --id Oracle.VirtualBox
 ```
