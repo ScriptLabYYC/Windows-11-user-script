@@ -16,5 +16,5 @@ start https://github.com/LeDragoX/Win-Debloat-Tools
 winget install --id=Microsoft.VCRedist.2015+.x64  -e
 winget install -e --id Oracle.VirtualBox
 winget install -e startallback
-winget install TranslucentTB
+winget install coretemp
 ```
