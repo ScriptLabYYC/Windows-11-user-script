@@ -9,5 +9,5 @@ Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name WallPaper -Value ''
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers" -Name BackgroundType -Type DWORD -Value 1
 Set-ItemProperty -Path "HKCU:\Control Panel\Colors" -Name Background -Value "0 0 0"
 winget install --id Microsoft.Powershell --source winget
-
+winget install --id Brave.Brave
 ```
