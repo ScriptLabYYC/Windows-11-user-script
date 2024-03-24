@@ -18,5 +18,5 @@ winget install -e --id Oracle.VirtualBox
 winget install -e startallback
 winget install coretemp
 
-wmic memorychip get speed,ConfiguredVoltage,DeviceLocator,Manufacturer,MaxVoltage,Minvoltage,Partnumber,serialnumber,Capacity,serialnumber,Capacity
+write-host "       Memory specifications:       " -backgroundcolor Yellow -foregroundcolor Darkblue;wmic memorychip get speed,ConfiguredVoltage,DeviceLocator,Manufacturer,MaxVoltage,Minvoltage,Partnumber,serialnumber,Capacity,serialnumber,Capacity
 ```
