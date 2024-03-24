@@ -5,5 +5,7 @@ Set-WinHomeLocation -GeoID 39 # 244 for US
 Get-WinHomeLocation
 New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowTaskViewButton" -Value 0 -Force 
 Get-AppxPackage *WebExperience* | Remove-AppxPackage
-
+Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name WallPaper -Value ''
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers" -Name BackgroundType -Type DWORD -Value 1
+Set-ItemProperty -Path "HKCU:\Control Panel\Colors" -Name Background -Value "0 0 0"
 ```
