@@ -20,7 +20,7 @@ winget install -e --id Oracle.VirtualBox
 winget install -e startallback
 winget install coretemp
 winget install CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
-winget install CrystalDewWorld.CrystalDiskMark.ShizukuEdition
+winget install CrystalDewWorld.CrystalDiskMark
 
 write-host "       Memory specifications:       " -backgroundcolor Yellow -foregroundcolor Darkblue;wmic memorychip get speed,ConfiguredVoltage,DeviceLocator,Manufacturer,MaxVoltage,Minvoltage,Partnumber,serialnumber,Capacity,serialnumber,Capacity
 ```
