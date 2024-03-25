@@ -3,6 +3,12 @@
 ```powershell
 Set-WinHomeLocation -GeoID 39 # 244 for US
 Get-WinHomeLocation
+# Set region from World to Canada
+# Update Windows
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+
+
+
 Get-AppxPackage *WebExperience* | Remove-AppxPackage
 Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name WallPaper -Value ''
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers" -Name BackgroundType -Type DWORD -Value 1
